@@ -24,6 +24,9 @@ document.getElementById("inputId").addEventListener("change",function(){
 })
 
 
+
+
+
 //2.비밀번호란 미입력 상태에서 비밀번호 확인 작성시
 //비밀번호를 입력해주세요 경고창 출력후 
 //비밀번호 란에 focus 하기
