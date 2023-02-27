@@ -21,6 +21,21 @@
             border: 1px solid black;
         }
 
+        .confirm{
+            color : green;
+            font-weight: bold;
+            text-decoration: underline;
+
+        }
+
+        .error{
+            color:red;
+            font-family: '궁서';
+            font-weight: bold;
+
+
+
+        }
 
 
 
@@ -130,13 +145,26 @@
 
 <div class="area" id="div1"></div>
 
+
+
+
+
 <hr>
+<h3>//Q. 만들어보기(실습 )</h3>
+<pre>    
 
-이름 : <input type="text" id="name">
+    //유효한 경우 초록색으로"유효한 이름형식"
+  //유효하지 않은경우 빨간색 글씨로 "잘못된 형식"
+</pre>
 
+
+이름 : <input type="text" id="inputname">
+<span id="result1" class="confirm">결과</span>
 
 
 <script src="../JS/07_정규표현식.js"></script>
     
 </body>
 </html>
+
+

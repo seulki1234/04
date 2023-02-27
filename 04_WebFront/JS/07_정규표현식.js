@@ -104,48 +104,39 @@ document.getElementById("check2").addEventListener("click",function(){
     //^[a-zA-Z0-9]$
   
 
-
-    //Q. 만들어보기(실습 )
-    //한글2글자이상 6글자 이하 문자열
-    //단자음/모음경우 제외
-    //유효한 경우 초록색으로"유효한 이름형식"
-    //유효하지 않은경우 빨간색 글씨로 "잘못된 형식"
-
-
-    const regEx5 = / [가-힣]/;
-    //name.innerText += regEx5.test("name");
-    const name=document.getElementById("name").innerText;
-
-    document.getElementById("name").addEventListener("keyup",function(){
-        if(name.innerHTML=== (name.innerHTML += regEx5.test)){
- 
-            this.style.color="green";
-            this.innerText="유효한 이름형식"
-        }else{
-            this.style.color="red";
-            this.innerText="잘못된 형식"
-        }
-
-    })
-    
-
-
-
-    
-
-
-
-
-
-
-
-    // \w (word,단어) : 아무 글자(단, 띄어쓰기, 특수문자, 한글 X)
-    // \d (dight, 숫자) : 아무 숫자(0-9중 하나)
-    // \s (space, 공간) : 아무 공백 문자(띄어쓰기, 엔터, 탭 등 )
-
-
-
-
-
-
 })
+
+
+
+ //Q. 만들어보기(실습 )
+    
+
+      //유효한 경우 초록색으로"유효한 이름형식"
+    //유효하지 않은경우 빨간색 글씨로 "잘못된 형식"
+    
+    
+    document.getElementById("inputname").addEventListener("keyup",function(){
+        //한글2글자이상 6글자 이하 문자열
+        //단자음/모음경우 제외
+        const regEx5 = /^[가-힣]{2,6}$/;
+        const result1 = document.getElementById("result1");
+
+        
+        //유효성검사
+        if(regEx5.test(this.value)){
+            result1.innerText="유효한 이름형식"
+            //요소.classList : 요소가 가지고 잇는 클래스를 배열로 반환
+            //요소.classList.add ("클래스명"): 요소에 특정 클래스 추가 
+            //요소.classList.remove ("클래스명"): 요소에 특정 클래스 삭제
+            //요소.classList.toggle ("클래스명"): 클래스가 있으면 제거, 없으면 추가
+            result1.classList.add("confirm");
+            result1.classList.remove("error");          
+        }else{           
+            result1.innerText="잘못된 형식"
+            result1.classList.add("error");
+            result1.classList.remove("confirm");
+        }
+    })
+
+
+
