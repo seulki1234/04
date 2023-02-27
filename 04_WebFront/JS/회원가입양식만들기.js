@@ -10,8 +10,9 @@
 
 document.getElementById("inputId").addEventListener("change",function(){
     
+    const regEx = /^[a-z][\w_-]{5,13}$/;
+    //_, - 가능하게    
     const regEx1=/^[a-zA-Z0-9]{6,14}$/;
-    //_, - 가능하게    확인(-)
     if(regEx1.test(this.value)){
         this.style.backgroundColor="green"; 
         this.style.color="white";
@@ -115,20 +116,21 @@ if(gender == null) {
 }
 
 document.getElementById("telnumber").addEventListener("keyup",function(){
-    const regEx3=/^([0][0-9]{1,2})-([0-9]{3,4})-([0-9]{4})/;
+    const regEx3=/^[0][0-9]{1,2}-[0-9]{3,4}-[0-9]{4}/;
     const telnumber=document.getElementById("telnumber");
 
     if(!regEx3.test(telnumber.value)){
         alert("전화번호 형식이 올바르지않음");
         ////return false 로, submit 기본 이벤트를 제거해줘야함
-        return true; 
+        return ; 
     }
+    re
 })
 }
 
 
 
-
+}
 
 const male = document.getElementById("male");
 const female = document.getElementById("female");
@@ -144,21 +146,11 @@ const female = document.getElementById("female");
 
 
 
-// document.getElementById("telnumber").addEventListener("keyup",function(){
-//     const regEx3=/^([0-9]{3})[-]([0-9]{4})[-]([0-9]{4})$/;
-//     const telnumber=document.getElementById("telnumber");
+// document.getElementById("telnumber").addEventListener("keyup", function(){
+//     const regEx3= /^[0][0-9]{1,2}-[0-9]{3,4}-[0-9]{4}/;
+//     //const telnumber=document.getElementById("telnumber");
 
-//     if(regEx3.test(this.value) == false){
+//     if(!regEx3.test(this.value)){
 //         alert("전화번호 형식이 올바르지않음");
 //     }
 // })
-
-
-
-
-
-
-
-//회원가입 버튼 클릭시:validate() 함수 호출
-//<form onsubmit="return validate();">
-
