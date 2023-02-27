@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07_레이아웃스타일</title>
+    <link rel="stylesheet" href="css/07_layout1.css">
+</head>
+<body>
+    <h1>레이아웃 (layout)</h1>
+    <h3>display 속성</h3>
+    <pre>
+        -block : 수직 분할 + width, height 사용0
+        -inline : 수평분할 + width, height 사용X
+        -inline-block : inline 의 수평분할 + width, height 사용0
+        -none : 화면에 요소가 표시되지 않음, 그러나 존재는 하고 있음
+        -flex : 요소의 정렬되는 방향, 간격을 유연하게 처리하는 형식
+    </pre>
+
+    <h3>block 형식요소 div 를 inline 변경</h3>
+    <pre> class 이름을 여러개 중첩해서 사용할 수 있음. 1번, 2번영역 확인하면 됨 </pre>
+    <div class="area1 inline">1번영역</div>
+    <div class="area2 inline">2번영역</div>
+    <div class="area3 ">3번영역</div>
+    <div class="area4">4번영역</div>
+    <div class="area5">5번영역</div>
+
+    <h3>inline 형식요소 span 을 block 변경</h3>
+
+    <span class="area1 block">1번영역</span>
+    <span class="area2 block">2번영역</span>
+    <span class="area3">3번영역</span>
+    <span class="area4">4번영역</span>
+    <span class="area5">5번영역</span>
+
+
+    <h3>inline-block 확인하기</h3>
+
+    <div class="area1 inline-block block">1번영역</div>
+    <div class="area2 inline-block block">2번영역</div>
+    <div class="area3 inline-block block">3번영역</div>
+    <div class="area4 inline-block block">4번영역</div>
+    <div class="area5 inline-block block">5번영역</div>
+
+<hr>
+    <h1>영역분할</h1>
+    <h3>상하2분할</h3>
+    <pre>
+        준비물 
+        -감싸고 있는 영역 요소
+        -내부를 분할할 요소-2개
+        -display:block
+        -크기 지정 단위(px, %) 
+    </pre>
+
+    <!--감싸고 있는 영역 요소-->
+    <div id="container-1">
+        <!--내부를 분할할 요소-->
+
+        <div></div>
+        <div></div>
+
+    </div>
+
+<hr>
+<h3>상하3분할</h3>
+<pre>
+    준비물
+    1)감싸는 영역
+    -container-2
+    -높이 : 440px;
+    -너비 : 300px; 
+</pre>
+
+<div id="container-2">
+    <div></div>
+    <div></div>
+    <div></div>
+    
+
+</div>
+
+
+<h3> display:none </h3>
+<pre>
+    display : none;
+
+    visibility : hidden;
+</pre>
+
+<div class="test">1</div>
+<div class="test none">2</div>
+<div class="test">3</div>
+<div class="test hidden">4</div>
+<div class="test">5</div>
+
+
+
+
+
+</body>
+</html>

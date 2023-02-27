@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+.container{
+    width: 1000px;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    border:1px solid red;
+}
+
+.header {
+    background-color: violet;
+    flex-basis: 20%;
+
+}
+
+.content{
+    display: flex;
+    flex-basis: 60%;
+    border : 1px solid red
+}
+
+.content>div:nth-child(1){
+    background-color: pink;
+    flex-basis : 20%;
+    
+}
+.content>div:nth-child(2){
+    background-color: green;
+    flex-basis: 60%;
+}
+
+.content>div:nth-child(3){
+    background-color: pink;
+    flex-basis: 20%;
+}
+

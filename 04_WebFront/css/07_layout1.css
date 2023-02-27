@@ -1,0 +1,82 @@
+.area1{background-color: red;}
+.area2{background-color: orange;}
+.area3{background-color: yellow;}
+.area4{background-color: green;}
+.area5{background-color: blue}
+
+.inline{
+    display: inline;
+    /*요소의 형식을 inline 변경*/
+}
+
+.block{
+    display : block;
+    /*요소의 형식을 block 변경*/
+    width:150px;
+    height: 150px;
+}
+
+.inline-block{
+    display :inline-block;
+}
+
+#container-1{
+    border:3px solid black;
+    width:350px;
+    height:472px;
+}
+
+/* > (꺽쇠) : 바로 아래 자식이라는 뜻 
+    띄어쓰기 : 후손 (자식의 자식)  
+    height 을 나타낼 때, px 로 하면 토탈 합에서 1개씩 나누는게 번거로우므로,  % 로 나눔
+    */
+#container-1 > div:first-child {
+background-color: orange;
+height:30%;
+}
+
+#container-1 > div:last-child {
+background-color: blue;
+height:70%;
+}
+
+
+#container-2{
+    border : 3px solid black;
+    height : 440px;
+    width : 300px;
+}
+
+/*nth-child(1)(2)(3).. 이렇게 써주면 여러개 분할 가능*/
+
+#container-2 > div:nth-child(1) {
+    background-color: brown;
+    height:20%;
+}
+
+#container-2 > div:nth-child(2) {
+    background-color: yellow;
+    height:30%;
+}
+
+#container-2 > div:nth-child(3) {
+    background-color: purple;
+    height:50%;
+}
+
+.test {
+    border :1px solid black;
+    width:50px;
+    height: 50px;
+}
+
+.none {
+    display: none;
+/*요소는 존재하나 화면 출력안됨*/
+}
+
+.hidden {
+/*요소는 존재하나 화면 출력됨*/
+ display: hidden;
+}
+

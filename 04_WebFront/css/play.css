@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* 자주 쓰는 내용이라서 꼭 알아두기
+(부모에게만 씀)flex-direction: row; 이게 기본값임.  flex-direction 을 안써줘도 row 가 기본값.
+display: flex 와 set 로 다님
+row,column,reverse,column-reverse 있음 
+
+(부모에게만 씀)flex-wrap : no 가 기본값
+flex-wrap : wrap 하면 부모값 상관없이 자식값은 정해준 크기대로 나오고 아래열로 내려감 
+
+(부모에게만 씀) 
+flex-direction: row 
+justify-content : space-evenly, space-around .... 알아두기
+(row column 에 따라 달라짐)
+
+(부모에게만 씀) 
+flex-direction: row 
+align-items : center
+(row column 에 따라 달라짐)
+
+
+flex-basis : (자식에게만 씀)
+
+
+*/
+.parent {
+    display: flex;
+    flex-wrap:wrap ;
+
+    width:500px;
+    height:1000px;
+    border:1px solid red;
+}
+
+.child1 {
+    
+    height:100px;
+    background-color: hotpink;
+    flex-basis : 30%;
+    }
+
+    .child2{
+       
+    height:100px;
+    background-color: orange;
+        flex-basis: 20%;
+} 
+    
+    .child3{
+        
+    height:100px;
+    background-color: blue;
+    flex-basis: 50%;
+    }

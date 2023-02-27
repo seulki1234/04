@@ -1,0 +1,50 @@
+*{
+box-sizing: border-box;
+margin:0;
+}
+
+
+#container{
+width:1000px;
+height:700px;
+border:3px solid black;
+display:flex;
+flex-direction: column;
+}
+
+#container > div:first-child{
+ background-color: violet;
+ flex-basis: 20%;
+
+}
+
+#container>div:last-child{
+    border:3px solid red;
+    flex-basis:80%;
+}
+
+
+/*점유율을 가져가려는 자식들이 있으면, flex, flex-basis 사용해야함.*/
+.content{
+    display:flex;
+    border : 1px solid black;
+    /*flex-direction : row */
+}
+
+.content>div:nth-child(1){
+    flex-basis:50%;
+    background-color: green;
+    border : 1px solid black;
+}
+
+.content>div:nth-child(2){
+    flex-basis:25%;
+    background-color: pink;
+    border : 1px solid black;
+}
+
+.content>div:nth-child(3){
+    flex-basis:25%;
+    background-color: pink;
+    border : 1px solid black;
+}
