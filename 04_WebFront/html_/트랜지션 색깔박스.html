@@ -7,18 +7,42 @@
     <title>트랜지션 색깔박스</title>
     
     <style>
-        .div {
+        .box {
         width : 100px;
         height : 100px;
         border: solid black 1px;
         float : left;
-
     }
 
-    #input1,#input2,#input3,#input4,#input5{
+    .text{
+        width : 100px;
+        height : 30px;
+        border: solid black 1px;
+
+        float : left;
+    }
+
+    .colorinput{
+        width:90px;
+        height:20px;
+        border:none;
+        outline: none;
+    }
+
+    .clear{
+        clear:both;
+    }
+
+    #duration{
+        border:none;
+        outline: none;
+    }
+
+
+    /* #input1,#input2,#input3,#input4,#input5{
         width: 100px;
         border:solid black 1px;
-    }
+    } */
 
     </style>
     
@@ -26,21 +50,37 @@
 <body>
 
 
-    <div id="div1" class="div"></div>
-    <input type="text" id="input1">
+<div class="box" id="colorbox1"></div>
+<div class="box" id="colorbox2"></div>
+<div class="box" id="colorbox3"></div>
+<div class="box" id="colorbox4"></div>
+<div class="box" id="colorbox5"></div>
 
-    <div id="div2" class="div"></div>
-    <input type="text" id="input2">
+<div class="clear "></div> 
 
-    <div id="div3" class="div"></div>
-    <input type="text" id="input3">
+<div class="text"><input type="text" class="colorinput" id="colortext1"></div>
+<div class="text"><input type="text" class="colorinput" id="colortext2"></div>
+<div class="text"><input type="text" class="colorinput" id="colortext3"></div>
+<div class="text"><input type="text" class="colorinput" id="colortext4"></div>
+<div class="text"><input type="text" class="colorinput" id="colortext5"></div>
 
-    <div id="div4" class="div"></div>
-    <input type="text" id="input4">
 
-    <div id="div5" class="div"></div>
-    <input type="text" id="input5">
-    
+<div class="clear"></div>
+
+현재 transition-duration : <span id="duration">0</span>초
+<br>
+
+transition-duration 변경 : 
+<input type="number" id="inputnumber">   <button type="button" id="btn1">변경</button>
+<br>
+<br>
+<button type="reset" id="btn2">초기화</button>
+
+
+
+
+
+
 
 
     <script src="../JS/트랜지션 색깔박스.js "></script>

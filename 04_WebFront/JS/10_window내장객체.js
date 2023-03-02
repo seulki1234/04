@@ -57,7 +57,7 @@ function currentTime(){
     if(min<10) min = "0" + min;
     if(sec<10) sec = "0" + sec;
 
-    return hour + " : " + min + " : " + sec;
+     return hour + " : " + min + " : " + sec;
 }
 
 
