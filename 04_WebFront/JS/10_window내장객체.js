@@ -119,7 +119,7 @@ openPopup3.addEventListener("click",function(){
 document.getElementById("sendChild").addEventListener("click",function(){
 
     const options = "width=400, height=500, top=50, left=400"; 
-    window.open("팝업.html", "popupwindow", options);
+    window.open("10_window내장객체_팝업.html", "popupwindow", options);
 
 })
 

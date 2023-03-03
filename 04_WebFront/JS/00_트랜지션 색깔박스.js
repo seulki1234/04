@@ -11,17 +11,24 @@ for(let i =0; i<colorinputarr.length; i++){
 })
 }
 
-//duration 숫자 변경시->현재 duration 숫자 변경
-document.getElementById("btn1").addEventListener("click",function(){
-   duration.innerText = inputnumber.value;
-})
+// //duration 숫자 변경시->현재 duration 숫자 변경
+// document.getElementById("btn1").addEventListener("click",function(){
+//    duration.innerText = inputnumber.value;
+// })
+// //위처럼 따로 해도 되고, 아래에 한꺼번에 셋팅해줘도됨
+
 
 //duration 숫자 변경시->현재 transitionduration 숫자 셋팅 변경
-document.getElementById("inputnumber").addEventListener("keyup", function() {
+document.getElementById("btn1").addEventListener("click", function() {
     for(let i =0; i < colorinputarr.length; i++) {
         boxarr[i].style.transitionDuration = inputnumber.value + "s";
+        document.getElementById("duration").innerText = inputnumber.value;
     }
 })
+
+
+
+
  
 
 //초기화 버튼 누를시->text,color,duration 지정한 것 모두 초기화하기
@@ -35,6 +42,10 @@ document.getElementById("btn2").addEventListener("click",function(){
         colorinputarr[i].value = null;
     }
 })
+
+
+
+
 
 
 
