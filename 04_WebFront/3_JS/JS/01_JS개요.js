@@ -19,3 +19,4 @@ function changecolor2(){
     document.getElementById("box").style.backgroundColor="yellow";
 }
 
+document.get
