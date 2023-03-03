@@ -33,6 +33,11 @@ btn2.addEventListener("click", function(){
     }
 })
 
+
+
+
+
+
 //Math 확인
 const input3=document.getElementById("input3");
 const btn3 = document.getElementById("btn3");
@@ -43,7 +48,6 @@ btn3.addEventListener("click",function(){
     console.log(Math.trunc(input3.value));
     console.log(Math.round(input3.value));
 })
-
 
 
 //Math.random()

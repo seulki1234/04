@@ -66,7 +66,7 @@ document.getElementById("btn1").addEventListener("click",function(){
     }
     console.log("sum : " + sum);
 
-    //4. for(let key in 객체) -JS 객체용 forans
+    //4. for(let key in 객체) -JS 객체용 for문
 })
 
 //배열관련 함수확인

@@ -73,6 +73,9 @@ document.getElementById("check2").addEventListener("click",function(){
     const regEx2 = /^group/;
     div1.innerHTML += "/^group/ , group100 : " + regEx2.test("group100") + "<hr>";
     div1.innerHTML += "/^group/ , 100group : " + regEx2.test("100group") + "<hr>";
+    
+    
+ 
 
 
     //^[abcd] : 문자열이 a,b,c,d 중 하나로 시작하는지 검색
