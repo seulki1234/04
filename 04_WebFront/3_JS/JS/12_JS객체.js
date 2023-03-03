@@ -5,7 +5,7 @@ btn1.addEventListener("click",function(){
     //{} 객체 생성 및 다루기
     //** 중요 */
     //JS 객체의 key 는 무조건 String (묵시적으로 String 이라는말)
-    //->key 작성싱 "", '' (따옴표 X ) 모두 String으로 인식함
+    //->key 작성시 "", '' (따옴표 X ) 모두 String으로 인식함
 
     const brand = "스타벅스";
 

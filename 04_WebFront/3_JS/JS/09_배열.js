@@ -127,7 +127,7 @@ document.getElementById("btn2").addEventListener("click",function(){
 
 
 })
-
+document.querySelector
 
 // document.getElementById("btn3").addEventListener("click",function(){
 //     // const random = Math.trunc(Math.random()*45+1);
