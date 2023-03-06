@@ -1,0 +1,89 @@
+1. 버튼클릭이벤트
+
+2. 배열로 되어있는 fff.addEventListener 왜안되는지
+
+3. $ defined 
+   ->제이쿼리 라이브러리가 없으면 콘솔창에 오류가 뜸
+
+4. 자바스크립트 작성하는 3가지
+
+5. tag 엘리먼트 가져오는 방법(querySelector..)
+
+6. not a number 속성
+
+7. 함수레벨, 블록레벨(block scope)
+var,let,const
+
+8. 자바스크립트 원시타입, 참조타입
+
+
+9. 기본문서 구조(doctype, head, body...)
+
+10. 전달받은 문자열 자바스크립트로 변환해서 하는 window onload속성
+ : HTML(현재창)이 모두 로딩이 되었을때 라는 이벤트 리스너
+                    ->일단 HTML 문서내용을 모두 다 해석한 후 
+                    마지막에 onload 옆에 작성된 함수 수행
+
+    *window.onload의 단점 : 한페이지 내에서 한번만 작성할 수 잇다 
+                            (여러번 작성되면 마지막 내용이 수행됨)
+
+jQuery의 ready() 함수 : HTML 문서 로딩이 완료된 후 수행할 기능을 작성하는 함수
+                            *onload 의 단점인 한번만 작성 할 수 있다는 문제점을 보완
+                                ==여러번 작성 가능
+
+
+
+
+11. div, span 차이점
+
+12 어떤 클래스 속성을 전달 받으면 element 객체를 반환하는 메서드 서술
+ : getElementsByClassName
+
+13 querySelector
+
+
+14.제이쿼리 라이브러리 
+external 방식으로 라이브러리 연결(head 태그에,  확장자명까지 써야함)-상대경로 지정
+script src=" ../(상위루트) "    ./ (자기폴더)
+
+15. 웹표준과 관련된 기술에 대해 1,2,3
+-html5, CSS3, JS, jQuery
+
+16. 자바스크립트 배열 선언하는 방법
++ 배열선언과 동시에 초기화 (2가지)
+
+-초기화 : arr=[ ];  (빈 배열로 재선언)
+            
+
+17. input 태그에 잇는 타입 5가지 이상(text, radio, checkbox, color, button,number, reset, password, email, date,
+file, range,url... )
+
+18. infinity 속성
+ (무한대를 나타내는 숫자값)
+
+19. 자바스크립트 브라우저 객체모델 (BOM=browser object model)
+=window 는 브라우저 객체의 최상위 객체가 됨
+BOM 안에 있는거 ; document, screen, location, history, navigator
+
+20.문자열을 자바스크립트     로 변환
+-JASON 이란 ; 
+  JavaScript Object Notation, 자바스크립트 객체 인스턴스를 생성하는 방법
+
+**사용법 2가지**
+-JSON.stringify(JS객체)
+  : JS 객체 - >JSON 문자열로 반환  //서버에서 하는일
+-JSON.parse(JSON문자열) 
+ : JSON문자열 -> JS 객체로 변환 //위에와 반대되는일
+
+
+
+21. undefined가 뭔지
+-> 변수 선언0, 값 할당 X
+(null : 변수 선언0, 빈값으로 할당)  
+
+문제해결시나리오,
+22. 이벤트리스너종류 잘보기(id, name, class인지// click, mouseover,,, 인지)  
+
+23. 이벤트리스너 일 때, 
+     버튼글자 바꿀때 innerText, 
+     배경색 바꾸는건, color 아니고, backgroundColod
