@@ -104,28 +104,26 @@ document.getElementById("content").addEventListener("mouseleave",function() {
 let count = 0;
 document.getElementById("textBox").addEventListener("mouseover", function () {
 
-    if(count <= 10){
-        this.style.backgroundColor = "red";
-        this.style.color = "white";
-        this.style.fontFamily="궁서";
+    if( count <= 10 ) {
+        this.style.backgroundColor = 'red';
+        this.style.color = 'white';
+        this.style.fontFamily = "궁서";
 
-        if(count == 0){
+        if( count == 0 ) {
             this.innerText = "사랑해";
         } else {
-            this.innerText += "사랑해";
+            this.innerText += "사랑해"; 
         }
 
-        count++;
+        count++; 
 
-    } else{
-        this.style.backgroundColor="black";
-        this.sytle.color = "white";
-        this.style.fontFamily="궁서";
-        this.innerText="그만해"
-        this.style.lineheight="40px";
+    } else {
+        this.innerText = "그만해!!!"
+        this.style.backgroundColor = 'black';
+        this.style.color = "white";
+        this.style.fontFamily = "궁서";
+        this.style.lineHeight = "40px";
     }
-
-    console.log(count)
 
 })
 

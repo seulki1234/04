@@ -13,6 +13,10 @@ function getInnerHTML1(){
 
 }
 
+
+
+
+
 //innerHTML 로 변경하기(태그, 속성이 해석됨(HTML Converter))
 function setInnerHTML1() {
     const t1 = document.getElementById("test1");

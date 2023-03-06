@@ -115,7 +115,7 @@ document.getElementById("btn2").addEventListener("click",function(){
     //숫자기준 정렬 : [1, 2, 3, 5, 10]
 
     //내림차순(b-a)
-    //console.log(numArr.sort(function(a,b) { return b-a} ) );
+    console.log(numArr.sort(function(a,b) { return b-a} ) );
 
     //*sort()함수는 원본 배열의 순서를 정렬함. 즉 원본을 훼손한다는 말
     //-> 원본훼손 방지위해서는 깊은복사 이용해서 해결
@@ -145,38 +145,25 @@ document.querySelector
 
 
 //로또번호 만들기(중복안되게, 6개의 숫자 )
- document.getElementById("btn3").addEventListener("click",function(){
-           const lotto = []; //lotto 배열선언,6개로
-         
-           for(i=1; i<7; i++){
-             const random = Math.trunc(Math.random()*45)+1;
-             lotto.push (random); //push 하는걸 생각못했음.....
-            
-             if(lotto.indexOf('random') != -1){
-                    lotto.push(random)
-             }
-           }
-           console.log("로또번호 : " + lotto );
-
-      })
-
 //반복문안에서 함수 반복하는거 못했고,
 //중복제거 못했음
-// document.getElementById("btn3").addEventListener("click",function(){
-//     const lotto = [];
 
-//     while(lotto.length < 6) {
-//         //1~45 난수
-//         const ran = Math.floor(Math.random()*45+1);
+document.getElementById("btn3").addEventListener("click",function(){
+    const lotto = [];
+
+    //for(let i = 0; i<6; i++) 도 가능
+    while(lotto.length < 6) {
+        //1~45 난수
+        const ran = Math.floor(Math.random()*45+1);
         
-//         //중복검사
+        //중복검사
 
-//         //배열에 난수값이 없으면
-//         if(lotto.indexOf(ran) == -1) {
-//             lotto.push(ran);
-//         }
-//     }
+        //배열에 난수값이 없으면
+        if(lotto.indexOf(ran) == -1) {
+            lotto.push(ran);
+        }
+    }
 
-//     lotto.sort(function(a,b) {return a-b;}) //오름차순 정렬
-//     console.log('로또번호 :' + lotto)
-// })
+    lotto.sort(function(a,b) {return a-b;}) //오름차순 정렬
+    console.log('로또번호 :' + lotto)
+})

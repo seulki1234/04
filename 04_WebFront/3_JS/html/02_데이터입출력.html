@@ -15,6 +15,12 @@
             color: red;
         }
 
+
+        .blue{
+            color : blue;
+        }
+
+
         #area1 {
             width: 500px;
             height: 300px;
@@ -22,6 +28,8 @@
             background-color: aqua;
             display: flex;
             flex-wrap: wrap;
+            /* 정렬된 요소들의 총 넓이가 부모 넓이 보다 클 때, 
+            이 요소들을 다음 줄에 이어서 정렬 해주는 기능 */
             align-content: flex-start;
 
             overflow: auto;
@@ -54,7 +62,7 @@
         
     </pre>
 
-    <button onclick="getInnerHTML1()">innerHTML 로 읽어오기</button>
+    <button onclick="getInnerHTML1()">innerHTML 로 읽어오기</button> 
     <button onclick="setInnerHTML1()">innerHTML 로 변경하기</button>
 
     <p id="test1" class="box">
@@ -63,6 +71,7 @@
 
 
     </p>
+
 
 
     <hr>

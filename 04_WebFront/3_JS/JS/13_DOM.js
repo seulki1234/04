@@ -195,6 +195,28 @@ btn4.addEventListener("click",function(){
 
 
 
+//설명없이 다시보기
+// btn4.addEventListener("click",function(){
+//     if(count4 <= 10){
+
+
+//         const div = document.createElement("div");  // <div></div>태그를 만들어줌
+
+//         const input = document.createElement("input"); //<input></input>태그를 만들어줌
+
+
+//         div.innerText = count4;
+//         count4++;
+
+
+//         div.append(input);
+
+//         div4.append(div);
+
+//     }
+// })
+
+
 
 
 

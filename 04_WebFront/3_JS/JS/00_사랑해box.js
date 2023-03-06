@@ -29,9 +29,11 @@ document.getElementById("box").addEventListener("mouseover",function(){
     this.style.fontFamily = "궁서";
     count++;
     if(count <= 10){
-        document.getElementById("box").addEventListener("mouseover",function(){box.innerHTML += "사랑해";}); 
+        document.getElementById("box").addEventListener("mouseover",function(){
+            box.innerHTML += "사랑해";}); 
     }else{
-        document.getElementById("box").addEventListener("mouseover",function(){box.innerHTML = "그만해!!!";
+        document.getElementById("box").addEventListener("mouseover",function(){
+            box.innerHTML = "그만해!!!";
         this.style.backgroundColor = "black";
     })
     }           

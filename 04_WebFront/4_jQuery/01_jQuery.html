@@ -74,11 +74,11 @@
 
 <pre>
     HTML 문서는 항상 위에서 아래로 순서대로 해석됨
-    ->이래쪽에서 작성되어 아직 해석이 안된 코드는 사용할 수 없음
+    ->아래쪽에서 작성되어 아직 해석이 안된 코드는 사용할 수 없음
 
     window.onload : HTML(현재창)이 모두 로딩이 되었을때 라는 이벤트 리스너
                     ->일단 HTML 문서내용을 모두 다 해석한 후 
-                    마지막에 onload 옆에 작성된 함수 수행은
+                    마지막에 onload 옆에 작성된 함수 수행
 
     *window.onload의 단점 : 한페이지 내에서 한번만 작성할 수 잇다 
                             (여러번 작성되면 마지막 내용이 수행됨)
@@ -104,10 +104,10 @@
     //해당 코드는 정상 수행되지 않음
     //document.getElementById("test1").innerText = "HTML 해석순서 테스트"
 
-    window.onload = function(){
-        document.getElementById("test1").innerText = "HTML 해석순서 테스트"
+     window.onload = function(){
+         document.getElementById("test1").innerText = "HTML 해석순서 테스트"
 
-    }
+     }
 
     // window.onload = function(){
     //     console.log("마지막으로 작성된  onload")

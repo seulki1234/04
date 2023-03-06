@@ -93,7 +93,7 @@ function fnTest5() {
         //radio, checkbox 에서만 사용가능
 
         if (hobbyarr[i].checked) { //check된 경우
-            str += hobbyarr[i].value + "  "; //값 누적
+            str += hobbyarr[i].value + "  "; //값 누적,  "  "이거는 띄어쓰기용
 
 
             count++;  // 1씩 증가
@@ -120,9 +120,10 @@ function fnTest5() {
 function fnTest6() {
 
     //id 속성값이 csstest 인 요소를 1개 선택
-    //class 를 이용해서, 여러요소가 선택 됐을경우 첫번째 요소만 선택됨
+
     document.querySelector("#cssTest").style.border = "3px solid green";
 
+    //여러요소가 선택 됐을경우 첫번째 요소만 선택됨
     //div 에서 굳이 first child 안해줘도됨(어짜피 첫번째 요소만 선택되므로)
     document.querySelector("#cssTest > div").style.backgroundColor = "gold";
 
@@ -142,6 +143,7 @@ function readValue() {// 입력된 값을 읽어들여 채팅창에 출력
     const input = document.querySelector("#chattingInput");
 
 
+    
     //채팅이 정상적으로 입력된경우에만 출력
     if (input.value.trim().length > 0) {
         //문자열.trim() : 문자열 좌우 공백을 제거해줌(중간 공백 제거x)
@@ -154,12 +156,13 @@ function readValue() {// 입력된 값을 읽어들여 채팅창에 출력
         //요소.scrollHeight : 스크롤의 전체 높이
         //요소.scrollTop = 위치     :  스크롤을 특정 위치로 이동한다는뜻
         bg.scrollTop = bg.scrollHeight
-
+        
+        input.value = "";   //값을 누적할 변수 선언??
 
 
     }
 
-    input.value = "";
+    
 
 
 }

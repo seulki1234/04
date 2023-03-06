@@ -105,7 +105,7 @@ openPopup2.addEventListener("click",function(){
 openPopup3.addEventListener("click",function(){
     ////옵션이 지정된 팝업창
     //옵션 작성 방법 : "K=V, K=V, K=V" , 크기단위 작성X (px고정)
-    const options = "width=400, height=500, top=50, left=400"; 
+    const options = "width=400, height=500 , top=50, left=400"; 
     window.open("09_배열.html", "popupwindow", options);
 });
 
@@ -122,6 +122,8 @@ document.getElementById("sendChild").addEventListener("click",function(){
     window.open("10_window내장객체_팝업.html", "popupwindow", options);
 
 })
+
+
 
 
 

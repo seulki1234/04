@@ -19,16 +19,16 @@ function test() {
     var num3 = 300;
     num4 = 400;
 
-    console.log("함수 내부 num3" + num3);
-    console.log("함수 내부 num4" + num4);
+    console.log("함수 내부 num3 " + num3);
+    console.log("함수 내부 num4 " + num4);
 
     if(true){
         var num5 = 500; //지역변수
         num6 = 600; //전역변수
     }
 
-    console.log("if문 종료후 num5" + num5);  //function 지역변수
-    console.log("if문 종료후 num6" + num6); //전역변수
+    console.log("if문 종료후 num5 " + num5);  //function 지역변수
+    console.log("if문 종료후 num6 " + num6); //전역변수
 
 
 
@@ -37,7 +37,7 @@ test();
 
 //script 언어는 중간에 에러 발생시 해석을 멈춘다
 //console.log("함수 내부 num3"+num3); 
-console.log("함수 내부 num4"+num4); //전역변수(함수외부에서도 사용가능)
+console.log("함수 내부 num4 "+num4); //전역변수(함수외부에서도 사용가능)
 
 
 //자료형확인 (+ 변수 선언 방법)
@@ -147,12 +147,12 @@ function plusFn(num, fn){
     return num + fn();
 }
 
-const result = plusFn(100, function() {
-    return 30-10;
-}
-)
+const result = plusFn(100, function() {return 50-10;})
+
+
 typeBox.innerHTML += "<br><br>result : "  +  result;
 
+console.log(result)
 }
 
 

@@ -16,7 +16,7 @@ btn1.addEventListener("click",function(){
         price : 30000,
         'information' : function(){ //product객체의 기능
             //const brand = "메가커피";
-            //지역변수로 다시 생성해주면, 지역변수를 읽어옴 ?
+            //지역변수로 다시 생성해주면, 지역변수를 읽어옴
 
             console.log(brand);
             //객체 내부 함수에서 변수명을 작성하면, 

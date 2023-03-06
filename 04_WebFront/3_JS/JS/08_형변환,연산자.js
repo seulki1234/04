@@ -21,7 +21,7 @@ btn1.addEventListener("click",function(){
 
 })
 
-//isNaN(값)
+//isNaN(값) --Not a number
 const input2 = document.getElementById("input2");
 const btn2 = document.getElementById("btn2");
 
