@@ -1,33 +1,78 @@
 1. 버튼클릭이벤트
+keydown - 키 누름
+keypress - 키 눌렀거나/누르고 있는중이라 페이지에 문자 입력되고있다.
+keyup - 키 뗌
+
+click: 마우스 버튼을 눌렀다 뗄 때
+dblclick
+mousedown: 마우스 버튼을 누르고 있을 때
+mouseup: 눌렀던 마우스 버튼을 뗄 때
+mousemove: 마우스를 움직일 때(터치스크린X)
+mouseover: 요소 위로 마우스를 움직였을 때(터치스크린X)
+mouseout: 요소 바깥으로 마우스를 움직였을 때(터치스크린X)
+mouseenter: 특정영역 안으로
+mouseleave: 특정영역 밖으로 (마우스오버랑 아웃은 엘리먼트 기준인 것이랑 차이가 난다)
+
+focus / focusin: 포커스를 얻었을 때
+blur / focusout: 포커스를 잃었을 때
+
+input: <input>또는 <textarea>요소 값이나 contenteditable특성을 가진 요소 값이 변경되었을 때
+change: 선택 상자, 체크박스, 라디오 버튼의 상태가 변경되었을 때
+submit: 사용자가 (버튼이나 키를 이용하여) 폼을 제출할 때 - 사용자가 폼에 입력한 값을 서버로 전달하기에 앞서, 입력한 값이 올바른 것인지 검사할 때 주로 사용됨.
+reset
+cut: 사용자가 폼 필드의 콘텐츠를 잘라내기 했을 때
+copy
+paste
+select: 사용자가 폼 필드에서 텍스트를 선택했을 때
+
 
 2. 배열로 되어있는 fff.addEventListener 왜안되는지
+->CDN 방식으로 jQuery 라이브러리 추가해야하는데, 안해서 
 
 3. $ defined 
    ->제이쿼리 라이브러리가 없으면 콘솔창에 오류가 뜸
 
 4. 자바스크립트 작성하는 3가지
+-inline 방식
+ <button type="button"  onclick="alert('inline버튼이 클릭되었습니다')">inline방식</button>
+-내부 작성 방식(internal)
+    <button type="button" onclick="btnclick1()">internal방식1</button>
+     function btnclick1( ){
+            alert("internal 버튼이 클릭되었습니다")
+        }
+-외부 작성 방식(external)
+  <button type="button" onclick="btnclick3()">external방식</button>
+     document.getElementById("btn2").onclick=function(){
+            alert("internal 버튼 2번이 클릭되었습니다")
 
 5. tag 엘리먼트 가져오는 방법(querySelector..)
+: getElementsByTagName("tag")
+  querySelector
+  querySelectorAll
 
-6. not a number 속성
+6. not a number(NaN) 속성
+ : 숫자가 아니라서 숫자로 표현할 수 없는 상태
 
 7. 함수레벨, 블록레벨(block scope)
 var,let,const
 
 8. 자바스크립트 원시타입, 참조타입
+-원시타입 : 
 
+ 
+-참조타입 : 
 
 9. 기본문서 구조(doctype, head, body...)
 
 10. 전달받은 문자열 자바스크립트로 변환해서 하는 window onload속성
  : HTML(현재창)이 모두 로딩이 되었을때 라는 이벤트 리스너
-                    ->일단 HTML 문서내용을 모두 다 해석한 후 
-                    마지막에 onload 옆에 작성된 함수 수행
+     ->일단 HTML 문서내용을 모두 다 해석한 후 
+          마지막에 onload 옆에 작성된 함수 수행
 
     *window.onload의 단점 : 한페이지 내에서 한번만 작성할 수 잇다 
                             (여러번 작성되면 마지막 내용이 수행됨)
 
-jQuery의 ready() 함수 : HTML 문서 로딩이 완료된 후 수행할 기능을 작성하는 함수
+  jQuery의 ready() 함수 : HTML 문서 로딩이 완료된 후 수행할 기능을 작성하는 함수
                             *onload 의 단점인 한번만 작성 할 수 있다는 문제점을 보완
                                 ==여러번 작성 가능
 
@@ -35,6 +80,10 @@ jQuery의 ready() 함수 : HTML 문서 로딩이 완료된 후 수행할 기능�
 
 
 11. div, span 차이점
+-div : block, 줄바꿈 0 , 상자단위 생성
+-span : inline, 줄바꿈X , 줄 단위 생성
+
+
 
 12 어떤 클래스 속성을 전달 받으면 element 객체를 반환하는 메서드 서술
  : getElementsByClassName
@@ -44,16 +93,21 @@ jQuery의 ready() 함수 : HTML 문서 로딩이 완료된 후 수행할 기능�
 
 14.제이쿼리 라이브러리 
 external 방식으로 라이브러리 연결(head 태그에,  확장자명까지 써야함)-상대경로 지정
-script src=" ../(상위루트) "    ./ (자기폴더)
+<script src=" ../(상위루트) "    ./ (자기폴더)    >
+
+
 
 15. 웹표준과 관련된 기술에 대해 1,2,3
--html5, CSS3, JS, jQuery
+-html5 = 
+   html(기본 골격, 구조 형성, 웹 내용작성) 
+   +  CSS3(디자인 담당) 
+   +  JS (프로그래밍 요소, 동적인 화면을 웹페이지에 구현하기 위해 사용하는 스크립트 언어
+	웹의 동작을 구현 )
 
-16. 자바스크립트 배열 선언하는 방법
-+ 배열선언과 동시에 초기화 (2가지)
-
--초기화 : arr=[ ];  (빈 배열로 재선언)
-            
+16. 자바스크립트 배열 선언하는 방법+ 배열선언과 동시에 초기화 (2가지)
+const arr1 = new Array( );
+const arr1 = [ ];
+        
 
 17. input 태그에 잇는 타입 5가지 이상(text, radio, checkbox, color, button,number, reset, password, email, date,
 file, range,url... )
@@ -63,7 +117,7 @@ file, range,url... )
 
 19. 자바스크립트 브라우저 객체모델 (BOM=browser object model)
 =window 는 브라우저 객체의 최상위 객체가 됨
-BOM 안에 있는거 ; document, screen, location, history, navigator
+BOM 안에 있는거 ; document, screen,           location, history, navigator
 
 20.문자열을 자바스크립트     로 변환
 -JASON 이란 ; 
@@ -74,7 +128,6 @@ BOM 안에 있는거 ; document, screen, location, history, navigator
   : JS 객체 - >JSON 문자열로 반환  //서버에서 하는일
 -JSON.parse(JSON문자열) 
  : JSON문자열 -> JS 객체로 변환 //위에와 반대되는일
-
 
 
 21. undefined가 뭔지
